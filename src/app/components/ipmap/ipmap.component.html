@@ -1,0 +1,5 @@
+<div class="container" *ngIf="location && location.latitude && location.longitude">
+    <agm-map [latitude]="location.latitude" [zoom]="zoom" [longitude]="location.longitude">
+        <agm-marker  [latitude]="location.latitude" [longitude]="location.longitude"></agm-marker>
+    </agm-map>
+</div>
